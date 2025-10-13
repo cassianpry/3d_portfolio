@@ -43,27 +43,42 @@ const ShowCaseSection = () => {
         <div className="showcaselayout">
           {/* LEFT */}
           <div className="first-project-wrapper" ref={project1}>
-            <div className="image-wrapper">
-              <img src="/images/project1.png" alt="Buscannabis Platform" />
-            </div>
-            <div className="text-content">
-              <h2>
-                Buscannabis: Comparação e Informação de Produtos de Cannabis ao
-                Alcance de um Clique
-              </h2>
-              <p className="text-white-50 md:text-xl">
-                Uma plataforma construída com ReactJS, TailwindCSS & TypeScript
-                para uma experiencia rápida e amigável.
-              </p>
-            </div>
+            <a
+              href="https://buscannabis.info/"
+              target="_blank"
+              className="hover:text-blue-300 text-white"
+            >
+              <div className="image-wrapper">
+                <img src="/images/project1.png" alt="Buscannabis Platform" />
+              </div>
+              <div className="text-content">
+                <h2>
+                  Buscannabis: Comparação e Informação de Produtos de Cannabis
+                  ao Alcance de um Clique
+                </h2>
+                <p className="text-white-50 md:text-xl">
+                  Uma plataforma construída com ReactJS, TailwindCSS &
+                  TypeScript para uma experiencia rápida e amigável.
+                </p>
+              </div>
+            </a>
           </div>
           {/* RIGHT */}
           <div className="project-list-wrapper overflow-hidden">
             <div className="project" ref={project2}>
-              <div className="image-wrapper bg-[#0e0d0d]">
-                <img src="/images/project2.png" alt="BirWorld gaming shop" />
-              </div>
-              <h2>E-commerce de Jogos Digitais</h2>
+              <a
+                href="https://shopnxt.vercel.app/"
+                target="_blank"
+                className="hover:text-blue-300 text-white"
+              >
+                <div className="image-wrapper bg-[#0e0d0d]">
+                  <img src="/images/project2.png" alt="BirWorld gaming shop" />
+                </div>
+                <h2>E-commerce de Jogos Digitais</h2>
+                <span>
+                  Dados para teste: email: teste@teste.teste senha:1234567890
+                </span>
+              </a>
             </div>
             <div className="project" ref={project3}>
               <div className="image-wrapper bg-[#242222]">
