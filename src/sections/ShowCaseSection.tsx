@@ -81,10 +81,17 @@ const ShowCaseSection = () => {
               </a>
             </div>
             <div className="project" ref={project3}>
-              <div className="image-wrapper bg-[#242222]">
-                <img src="/images/project3.png" alt="Movies DB" />
-              </div>
-              <h2>Aplicação de listagem de Filmes</h2>
+              <a
+                href="https://movies-one-blue.vercel.app/"
+                target="_blank"
+                className="hover:text-blue-300 text-white"
+              >
+                "
+                <div className="image-wrapper bg-[#242222]">
+                  <img src="/images/project3.png" alt="Movies DB" />
+                </div>
+                <h2>Aplicação de listagem de Filmes</h2>
+              </a>
             </div>
           </div>
         </div>
