@@ -1,4 +1,4 @@
-import NavBar from "./components/NavBar";
+import NavBar from "./sections/NavBar";
 import Contact from "./sections/Contact";
 import Experience from "./sections/Experience";
 import FeatureCards from "./sections/FeatrureCard";
@@ -9,7 +9,7 @@ import TechStack from "./sections/TechStack";
 
 const App = () => {
   return (
-    <>
+    <div>
       <NavBar />
       <Hero />
       <ShowCaseSection />
@@ -18,7 +18,7 @@ const App = () => {
       <TechStack />
       <Contact />
       <Footer />
-    </>
+    </div>
   );
 };
 

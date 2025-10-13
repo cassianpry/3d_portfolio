@@ -9,7 +9,7 @@ const Button: React.FC<ButtonProps> = ({ text, className, id }) => {
     <a
       className={`${className ?? ""} cta-wrapper`}
       onClick={(e) => {
-        e.preventDefault;
+        e.preventDefault();
         const target = document.getElementById("work");
         if (target && id) {
           const offset = window.innerHeight * 0.15;

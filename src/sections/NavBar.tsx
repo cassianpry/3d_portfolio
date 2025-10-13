@@ -13,15 +13,19 @@ const NavBar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
   return (
-    <header className={`navbar ${scrolled ? "scrolled" : "not-scrolled"}`}>
+    <header
+      className={`navbar shadow-[0_0_10px_#72a1de63] ${
+        scrolled ? "scrolled" : "not-scrolled"
+      }`}
+    >
       <div className="inner">
         <a className="logo" href="#hero">
           Cassiano Marinello
         </a>
-        <nav className="desktop">
-          <ul>
+        <nav className="desktop ">
+          <ul className="hidden md:flex justify-between  py-3 px-4 rounded-full bg-[rgba(0,0,69,0.326)] backdrop-blur-xl shadow-[0_0_10px_#72a1de63]">
             {navLinks.map(({ link, name }) => (
-              <li key={name} className="group">
+              <li key={name}>
                 <a href={link}>
                   <span>{name}</span>
                   <span className="underline" />
